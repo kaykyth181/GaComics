@@ -2,17 +2,17 @@
 
 /* Variavel para as cores */
 :root{
-    --fundo-menu-lateral: #0D0D0D;
+    --fundo-menu-lateral: #0d0d0d;
     --fundo-claro:#91b2cf;
-    --fundo-escuro:#000a09;
+    --fundo-escuro:#0D0D0D;
 
     --texto-escuro: #00070D;
     --texto-menu:#0CF25D;
-    --texto-claro:#ffffffc0;
+    --texto-claro:#ffffffea;
     --texto-titulo:#0CF25D;
 
     --detalhes-claro: #91cf9b;
-    --detalhes-icones: #cfdde9;
+    --detalhes-icones: #ffffff;
     --detalhes-escuro: #D904A0;
 
     /* --cor-transparente: rgba(0,255,0, 0.5); */
@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: 2;
     min-width: 300px;
-    background-color: #0022417a;
+    background-color: #ff47f6c5;
     border-radius: 100%;
 }
 #hero h1 {
@@ -289,4 +289,38 @@ section {
     margin-right: 10px;
     color: var(--detalhes-icones);
     line-height: 0;
+}
+.conquistas{
+    padding-bottom: 30px;
+}
+.conquistas .count-box {
+    padding: 30px;
+    width: 100%;
+}
+.conquistas .count-box i {
+    display: block;
+    font-size: 45px;
+    color: var(--detalhes-escuro);
+    float: left;
+    line-height: 0;
+}
+
+.conquistas .count-box span {
+    font-size: 50px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: var(--texto-titulo);
+    margin-left: 60px;
+
+}
+.conquistas .count-box p{
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: 'Helvetica', serif;
+    font-size: 16px;
+    color: var(--texto-claro);
+}
+.conquistas .count-box i:hover{
+    color: var(--texto-menu);
 }
