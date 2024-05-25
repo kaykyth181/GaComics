@@ -1,1 +1,1 @@
-# GaComics
+# GAmes
