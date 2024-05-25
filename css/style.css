@@ -2,17 +2,18 @@
 
 /* Variavel para as cores */
 :root{
-    --fundo-menu-lateral: #F2EDDC;
+    --fundo-menu-lateral: #0D0D0D;
     --fundo-claro:#91b2cf;
-    --fundo-escuro:#011526;
+    --fundo-escuro:#000a09;
 
     --texto-escuro: #00070D;
-    --texto-menu:#011526;
-    --texto-claro:#91b2cf;
+    --texto-menu:#0CF25D;
+    --texto-claro:#ffffffc0;
+    --texto-titulo:#0CF25D;
 
-    --detalhes-claro: #91b2cf;
+    --detalhes-claro: #91cf9b;
     --detalhes-icones: #cfdde9;
-    --detalhes-escuro: #0e9609;
+    --detalhes-escuro: #D904A0;
 
     /* --cor-transparente: rgba(0,255,0, 0.5); */
 }
@@ -233,4 +234,59 @@ h1, h2, h3, h4, h5, h6 {
     #hero p {
     font-size: 24px;
 }
+}
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section-bg {
+    background: var(--fundo-claro);
+}
+.section-title{
+    padding-bottom: 30px;
+}
+.section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: var(--texto-titulo);
+}
+.section-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--detalhes-claro);
+}
+.section-title p{
+    margin-bottom: 0;
+}
+.sobre .content h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--detalhes-icones);
+    
+}
+.sobre .container ul{
+    list-style: none;
+    padding: 0;
+}
+
+.sobre .container ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.sobre .container ul strong {
+  
+    margin-right: 15px;
+   
+}
+.sobre .container ul i{
+    font-size: 22px;
+    margin-right: 10px;
+    color: var(--detalhes-icones);
+    line-height: 0;
 }
