@@ -3,7 +3,7 @@
 /* Variavel para as cores */
 :root{
     --fundo-menu-lateral: #0d0d0d;
-    --fundo-claro:#91b2cf;
+    --fundo-claro:#940999;
     --fundo-escuro:#0D0D0D;
 
     --texto-escuro: #00070D;
@@ -323,4 +323,37 @@ section {
 }
 .conquistas .count-box i:hover{
     color: var(--texto-menu);
+}
+
+/* skiils/vendas */
+
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+.skills .progress .skill{
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "open", sans-serif;
+    color: var(--texto-escuro);
+}
+.skills .progress .skill .val{
+    float: right;
+    font-style: normal;
+
+}
+.skills .progress-bar-bg{
+    background: var(--detalhes-escuro); /* cor da barra (fundo) */
+    height: 10px;
+}
+.skills .progress-bar{
+    width: 1px;
+    height: 10px;
+    transition: 2s;
+    background: var(--texto-titulo);
 }

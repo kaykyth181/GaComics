@@ -175,10 +175,10 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
   /**
    * Animação de habilidades
    */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
+  let skillsContent = select('.skills-content');
+  if (skillsContent) {
     new Waypoint({
-      element: skilsContent,
+      element: skillsContent,
       offset: '80%',
       handler: function(direction) {
         let progress = select('.progress .progress-bar', true);
