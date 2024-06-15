@@ -511,6 +511,7 @@ section {
     transition: 0.3;
     position: relative;
     overflow: hidden;
+    /* border: 3px solid var(--texto-titulo);  */
 }
 
 .portfolio .portfolio-wrap::before {
@@ -551,7 +552,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-    background: var(--fundo-escuro);
+    background: rgb(68, 68, 68);
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
@@ -565,4 +566,22 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links{
     opacity: 1;
     bottom: 0;
+}
+.filter-ps4 .portfolio-wrap{
+    
+}
+
+/* PESSOAL BORDA */
+
+.portfolio .filter-ps4 .portfolio-wrap::before{
+    border: 5px solid blue;
+}
+
+.filter-xbox .portfolio-wrap::before{
+    border: 5px solid #107c10;
+}
+
+.portfolio .filter-swt .portfolio-wrap::before{
+    border: 5px solid rgb(255, 0, 0);
+    position: absolute;
 }
