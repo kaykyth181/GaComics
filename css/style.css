@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
 
+
+/* site de icones: https://css.gg/games */
+
 /* Variavel para as cores */
 :root {
     --fundo-menu-lateral: #0d0d0d;
@@ -567,21 +570,69 @@ section {
     opacity: 1;
     bottom: 0;
 }
-.filter-ps4 .portfolio-wrap{
-    
-}
 
 /* PESSOAL BORDA */
 
 .portfolio .filter-ps4 .portfolio-wrap::before{
-    border: 5px solid blue;
+    border: 5px solid #3679d1;
 }
 
 .filter-xbox .portfolio-wrap::before{
-    border: 5px solid #107c10;
+    border: 5px solid #38B148;
 }
 
 .portfolio .filter-swt .portfolio-wrap::before{
     border: 5px solid rgb(255, 0, 0);
     position: absolute;
+}
+
+/* pessoal titulo */
+.title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* portifolio pagina adicional == detalhes */
+
+/** voltar **/
+
+.servicos .icon-box {
+    margin-bottom: 20px;
+}
+
+.servicos .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: var(--fundo-claro);
+    border-radius: 50px;
+    margin-right: 12px;
+    transition: 0.5s;
+    border: 2px solid var(--texto-menu);
+}
+
+.servicos .icon i{
+    font-size: 30px;
+    color: var(--texto-menu);
+    line-height: 0;
+    
+}
+.servicos .icon:hover {
+    background: var(--texto-menu);
+    transition: 0.3;
+}
+.servicos .icon:hover i {
+    color: var(--texto-claro);
+}
+.servicos .title{
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.servicos .descricao {
+    margin-left: 60px;
+    line-height: 20px;
+    font-size: 18px;
 }
