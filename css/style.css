@@ -164,7 +164,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover>a {
+.nav-menu li:hover>a /* faz colorir o menu de acordo com o site*/{
     text-decoration: none;
     color: var(--texto-menu);
 }
