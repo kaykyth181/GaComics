@@ -164,7 +164,10 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover>a /* faz colorir o menu de acordo com o site*/{
+.nav-menu li:hover>a
+
+/* faz colorir o menu de acordo com o site*/
+    {
     text-decoration: none;
     color: var(--texto-menu);
 }
@@ -525,8 +528,8 @@ section {
     right: 0;
     bottom: 0;
     left: 0; */
-    inset: 0  ;
-        /* resume valor =0 => top,right, bottom,left */
+    inset: 0;
+    /* resume valor =0 => top,right, bottom,left */
     transition: all ease-in-out 0.3s;
     z-index: 2;
     opacity: 0;
@@ -566,30 +569,32 @@ section {
     inset: 0;
     opacity: 1;
 }
-.portfolio .portfolio-wrap:hover .portfolio-links{
+
+.portfolio .portfolio-wrap:hover .portfolio-links {
     opacity: 1;
     bottom: 0;
 }
 
 /* PESSOAL BORDA */
 
-.portfolio .filter-ps4 .portfolio-wrap::before{
+.portfolio .filter-ps4 .portfolio-wrap::before {
     border: 5px solid #3679d1;
 }
 
-.filter-xbox .portfolio-wrap::before{
+.filter-xbox .portfolio-wrap::before {
     border: 5px solid #38B148;
 }
 
-.portfolio .filter-swt .portfolio-wrap::before{
+.portfolio .filter-swt .portfolio-wrap::before {
     border: 5px solid rgb(255, 0, 0);
     position: absolute;
 }
 
 /* pessoal titulo */
-.title{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 /* portifolio pagina adicional == detalhes */
 
 /** voltar **/
@@ -612,25 +617,29 @@ section {
     border: 2px solid var(--texto-menu);
 }
 
-.servicos .icon i{
+.servicos .icon i {
     font-size: 30px;
     color: var(--texto-menu);
     line-height: 0;
-    
+
 }
+
 .servicos .icon:hover {
     background: var(--texto-menu);
     transition: 0.3;
 }
+
 .servicos .icon:hover i {
     color: var(--texto-claro);
 }
-.servicos .title{
+
+.servicos .title {
     margin-left: 20px;
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 24px;
 }
+
 .servicos .descricao {
     margin-left: 60px;
     line-height: 20px;
@@ -639,27 +648,91 @@ section {
 
 
 /* depoimentos // feedback // avaliações */
-.depoimentos, .depoimentos .depoimentos-slider{
+.depoimentos,
+.depoimentos .depoimentos-slider {
     overflow: hidden;
 }
-.depoimentos .depoimento-item{
+
+.depoimentos .depoimento-item {
     text-align: center;
     min-height: 320px;
 }
-.depoimentos .depoimento-item .depoimento-img{
+
+.depoimentos .depoimento-item .depoimento-img {
     width: 90px;
     border-radius: 50%;
     margin: 0 auto;
 
 }
-.depoimentos .depoimento-item h3{
+
+.depoimentos .depoimento-item h3 {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0 5px 0;
     color: var(--texto-titulo);
 }
-.depoimentos .depoimento-item h4{
+
+.depoimentos .depoimento-item h4 {
     font-size: 14px;
     margin: 0;
     color: var(--detalhes-escuro);
+}
+
+.depoimentos .depoimento-item .quote-left,
+.depoimentos .depoimento-item .quote-right {
+    color: var(--texto-titulo);
+    font-size: 26px;
+
+}
+
+.depoimentos .depoimento-item .quote-left{
+    display: inline-block;
+    position: relative;
+    left: -5px;
+}
+
+.depoimentos .depoimento-item .quote-right{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    right: -5px;
+}
+
+.depoimentos .depoimento-item p {
+    font-style: italic;
+    color: var(--detalhes-icones);
+    margin: 0 15px 27px 15px;
+    padding: 20px;
+    background: var(--fundo-claro);
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgba(218, 221, 224, 0.5);
+}
+.depoimentos .depoimento-item p::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 20px);
+    width: 0;
+    height: 0;
+    border-top: 20px solid var(--fundo-claro);
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+
+.depoimentos .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet{
+    width: 20px;
+    height: 2px;
+    background: var(--detalhes-escuro);
+    opacity: 1;
+    /* border: 1px solid var(--detalhes-escuro); */
+}
+
+.depoimentos .swiper-pagination .swiper-pagination-bullet-active{
+    background: var(--texto-titulo);
 }
