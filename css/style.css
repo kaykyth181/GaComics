@@ -278,7 +278,15 @@ h6 {
 
     #hero p {
         font-size: 24px;
+        text-align: center;
+        
     }
+    
+
+    #hero h1 {
+        text-align: center;
+    }
+
 }
 
 section {
