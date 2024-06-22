@@ -5,7 +5,7 @@
 
 /* Variavel para as cores */
 :root {
-    --fundo-menu-lateral: #0d0d0d;
+    --fundo-menu-lateral: #3f3f3f;
     --fundo-claro: #940999;
     --fundo-escuro: #0D0D0D;
 
@@ -192,7 +192,7 @@ h6 {
     transition: all 0.5s;
     /* outline: none !important; */
     background: var(--fundo-claro);
-    color: var(--fundo-menu-lateral);
+    color: var(--texto-menu);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -685,13 +685,13 @@ section {
 
 }
 
-.depoimentos .depoimento-item .quote-left{
+.depoimentos .depoimento-item .quote-left {
     display: inline-block;
     position: relative;
     left: -5px;
 }
 
-.depoimentos .depoimento-item .quote-right{
+.depoimentos .depoimento-item .quote-right {
     display: inline-block;
     position: relative;
     top: 10px;
@@ -708,7 +708,8 @@ section {
     border-radius: 5px;
     box-shadow: 0 2px 15px rgba(218, 221, 224, 0.5);
 }
-.depoimentos .depoimento-item p::after{
+
+.depoimentos .depoimento-item p::after {
     content: "";
     position: absolute;
     bottom: -20px;
@@ -725,7 +726,8 @@ section {
     position: relative;
 
 }
-.depoimentos .swiper-pagination .swiper-pagination-bullet{
+
+.depoimentos .swiper-pagination .swiper-pagination-bullet {
     width: 20px;
     height: 2px;
     background: var(--detalhes-escuro);
@@ -733,6 +735,140 @@ section {
     /* border: 1px solid var(--detalhes-escuro); */
 }
 
-.depoimentos .swiper-pagination .swiper-pagination-bullet-active{
+.depoimentos .swiper-pagination .swiper-pagination-bullet-active {
     background: var(--texto-titulo);
 }
+
+.contato {
+    padding-bottom: 130px;
+}
+
+.contato .info {
+    padding: 30px;
+    background: var(--fundo-claro);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(211, 211, 211, 0.2);
+
+}
+
+.contato .info i {
+    font-size: 22px;
+    color: var(--texto-claro);
+    background: var(--texto-menu);
+    float: left;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: all 0.3 ease-in-out;
+
+}
+
+.contato .info h4 {
+    color: var(--texto-claro);
+    padding-left: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contato .info p {
+    color: var(--texto-claro);
+    padding: 0 0 10px 60px;
+    margin-bottom: 30px;
+}
+
+.contato .info .fone p:hover,
+.contato .info .email p:hover {
+    color: var(--texto-menu);
+}
+
+/* forms */
+
+.contato .email-form {
+    padding: 30px;
+    background: var(--fundo-claro);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(211, 211, 211, 0.2);
+
+}
+
+.contato .email-form .form-group {
+    padding-bottom: 15px;
+
+}
+
+.contato .email-form label {
+    color: var(--texto-claro);
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+
+.contato .email-form input,
+.contato .email-form textarea {
+    /* border-radius: 0; remover pontas circulares*/
+    /* box-shadow: none; remover sombra*/
+    font-size: 16px;
+
+}
+
+.contato .email-form input {
+    height: 40px;
+}
+
+.contato .email-form textarea {
+    padding: 10px 15px;
+}
+
+.contato .email-form button[type=submit] {
+    background: var(--detalhes-escuro);
+    color: var(--detalhes-icones);
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 24px;
+    /*    width: 70px;
+    height: 30px;
+    font-size: 18px; */
+    transition: 0.4s;
+
+
+}
+
+.contato .email-form button[type=submit]:hover {
+    background: var(--texto-titulo);
+    color: var(--fundo-menu-lateral);
+}
+/* backtotop */
+
+.back-to-top{
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    background: var(--fundo-claro);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s;
+
+}
+.back-to-top i{
+    color: var(--texto-menu);
+    font-size: 30px;
+    line-height: 0;
+}
+.back-to-top:hover{
+    background: var(--texto-claro);
+}
+.back-to-top i:hover{
+    color:var(--detalhes-icones)
+}
+.back-to-top.active{
+    visibility: visible;
+    opacity: 1;
+}
+/* breadcrumps */
