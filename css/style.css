@@ -878,5 +878,6 @@ section {
 .back-to-top.active{
     visibility: visible;
     opacity: 1;
+    box-shadow: 0 0 24px 0 rgba(211, 211, 211, 0.2);
 }
 /* breadcrumps */
