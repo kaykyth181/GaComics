@@ -233,12 +233,16 @@ h6 {
 
 /* HERO */
 #hero {
+    
     width: 100%;
     height: 100vh;
     background: url("../img/gamenight.gif") top center;
     /*inserir img no CSS*/
     background-size: cover;
+    
 }
+
+
 
 #hero::before {
     /* pseudo elemento css */
