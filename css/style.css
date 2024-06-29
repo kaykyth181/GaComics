@@ -4,7 +4,7 @@
 /* site de icones: https://css.gg/games */
 
 /* Variavel para as cores */
-:root {
+/* :root {
     --fundo-menu-lateral: #3f3f3f;
     --fundo-claro: #940999;
     --fundo-escuro: #0D0D0D;
@@ -18,8 +18,28 @@
     --detalhes-icones: #ffffff;
     --detalhes-escuro: #D904A0;
 
+    /* --cor-transparente: rgba(0,255,0, 0.5); 
+} */
+
+:root {
+    --fundo-menu-lateral: #034159;
+    --fundo-claro: #034159;
+    --fundo-escuro: #0D0D0D;
+
+    --texto-escuro: #b8b8b8;
+    --texto-menu: #0CF25D;
+    --texto-claro: #ffffffea;
+    --texto-titulo: #0CF25D;
+
+    --detalhes-claro: #91cf9b;
+    --detalhes-icones: #ffffff;
+    --detalhes-escuro: #038c3e94;
+
     /* --cor-transparente: rgba(0,255,0, 0.5); */
 }
+
+
+
 
 /* CSS Principal */
 body {
@@ -58,7 +78,7 @@ h6 {
     background: var(--fundo-menu-lateral);
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
-    z-index: 99999;
+    z-index: 9997;
     overflow-y: auto;
 }
 
@@ -215,7 +235,7 @@ h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/hero-bg.jpg") top center;
+    background: url("../img/gamenight.gif") top center;
     /*inserir img no CSS*/
     background-size: cover;
 }
@@ -279,9 +299,9 @@ h6 {
     #hero p {
         font-size: 24px;
         text-align: center;
-        
+
     }
-    
+
 
     #hero h1 {
         text-align: center;
@@ -848,9 +868,10 @@ section {
     background: var(--texto-titulo);
     color: var(--fundo-menu-lateral);
 }
+
 /* backtotop */
 
-.back-to-top{
+.back-to-top {
     position: fixed;
     visibility: hidden;
     opacity: 0;
@@ -864,20 +885,65 @@ section {
     transition: all 0.4s;
 
 }
-.back-to-top i{
+
+.back-to-top i {
     color: var(--texto-menu);
     font-size: 30px;
     line-height: 0;
 }
-.back-to-top:hover{
+
+.back-to-top:hover {
     background: var(--texto-claro);
 }
-.back-to-top i:hover{
-    color:var(--detalhes-icones)
+
+.back-to-top i:hover {
+    color: var(--detalhes-icones)
 }
-.back-to-top.active{
+
+.back-to-top.active {
     visibility: visible;
     opacity: 1;
     box-shadow: 0 0 24px 0 rgba(211, 211, 211, 0.2);
 }
+
 /* breadcrumps */
+
+/* footer */
+
+#footer {
+    padding: 30px;
+    background: var(--fundo-menu-lateral);
+    color: var(--texto-claro);
+    font-size: 16px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9999;
+}
+
+#footer .copyright {
+    text-align: center;
+}
+
+#footer .creditos{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--texto-claro);
+    
+
+}
+#footer .creditos a{
+    color: rgb(27, 214, 228);
+}
+
+@media(max-width: 1199px){
+    #footer{
+        position: static;
+        width: auto;
+        padding-right: 20px 15px;
+       
+    }
+   
+}
